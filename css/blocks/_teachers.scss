@@ -1,0 +1,10 @@
+.teachers {
+    &_margin {
+        margin-bottom: 120px;
+    }
+    &__block {
+        &_margin {
+            margin-bottom: 92px;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.review-form {
+    max-width: 654px;
+    &_margin {
+        margin-bottom: 90px;
+    }
+    &__form {
+        &_margin {
+            margin-bottom: 40px;
+        }
+    }
+    &__rating-wrap {
+        font-size: 16px;
+        line-height: 130%;
+        display: flex;
+        &_margin {
+            margin-bottom: 35px;
+        }
+    }
+    &__rating-category-wrap {
+        width: 250px;
+        &_long {
+            width: 330px;
+            margin-left: 70px;
+        }
+    }
+    &__rating-category {
+        display: flex;
+        justify-content: space-between;
+        &_margin {
+            margin-bottom: 19px;
+        }
+    }
+    &__label {
+        font-size: 14px;
+        line-height: 140%;
+        position: relative;
+        &_margin {
+            margin-bottom: 3px;
+        }
+    }
+    &__textarea {
+        width: 100%;
+        min-height: 181px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        border-radius: 3px;
+        resize: none;
+        padding: 20px;
+        font-size: 16px;
+        line-height: 130%;
+        &_margin {
+            margin-top: 3px;
+            margin-bottom: 30px;
+        }
+    }
+    &__download-button {
+        position: absolute;
+        top: 175px;
+        right: 11px;
+        cursor: pointer;
+    }
+    &__inputs-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input-elements {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        width: 310px;
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        border-radius: 3px;
+        padding: 17px 17.54px 12px 17.54px;
+        font-size: 16px;
+        line-height: 130%;
+        color: rgba(25, 28, 38, 0.6);
+    }
+    &__captcha-wrap {
+        &_margin {
+            margin-bottom: 50px;
+        }
+    }
+    &__captcha {
+        width: 286px;
+    }
+    &__send-button {
+        font-family: $Poppins;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+        width: 255px;
+        height: 50px;
+        background: $brand-pink;
+        border-radius: 3px;
+    }
+}

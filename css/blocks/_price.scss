@@ -1,0 +1,122 @@
+.price {
+    &_margin {
+        margin-bottom: 120px;
+    }
+    &__cards-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.price-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 250px;
+    min-height: 389px;
+    max-height: max-content;
+    border: 1px solid $brand-green;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 6px 4px rgba(25, 25, 25, 0.03));
+    border-radius: 8px;
+    padding: 33px 25px 40px 25px;
+    background: white;
+    &_active {
+        min-height: 468.75px;
+        background: $brand-pink;
+        padding: 49.67px 25px 46.75px 25px;
+        border: none;
+        .price-card__type-title {//костыли для того, чтобы активная карта менялась одним селектором
+            font-size: 31px;
+            margin-bottom: 3px;
+            color: white;
+        }
+        .price-card__type-text {
+            font-size: 21px;
+            color: white;
+        }
+        .price-card__type_margin {
+            margin-bottom: 23.36px;
+        }
+        .price-card__cost {
+            font-size: 47px;
+            color: white;
+            &_margin {
+                margin-bottom: 30px;
+            }
+        }
+        .price-card__advantages p, 
+        .price-card__list-item {
+            color: white;
+        }
+        .price-card__list-item:before {
+            background: white;
+        }
+        .price-card__button {
+            border: none;
+            color: $brand-pink;
+        }
+    }
+    &__content {
+        flex: 1 0 auto;
+    }
+    &__type {
+        &_margin {
+            margin-bottom: 30px;
+        }
+    }
+    &__type-title {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 160%;
+    }
+    &__type-text {
+        font-size: 16px;
+        line-height: 160%;
+    }
+    &__cost {
+        font-size: 42px;
+        line-height: 160%;
+        &_margin {
+            margin-bottom: 25px;
+        }
+    }
+    &__advantages {
+        font-size: 16px;
+        line-height: 160%;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 27px;
+    }
+    &__list-item {
+        position: relative;
+        margin-left: 15.67px;
+    }
+    &__list-item:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: black;
+        position: absolute;
+        left: -15.67px;
+        top: 38%;
+    }
+    &__button-wrap {
+        flex: 0 0 auto;
+    }
+    &__button {
+        width: 200px;
+        height: 44px;
+        border: 1px solid #4F4F4F;
+        border-radius: 3px;
+        background: white;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+    }
+}

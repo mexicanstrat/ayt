@@ -1,0 +1,23 @@
+.image-selector {
+    max-width: 425px;
+    &__images-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image {
+        width: 95px;
+        height: 78px;
+        opacity: 0.6;
+        border-radius: 3px;
+        &_selected {
+            opacity: 1;
+        }
+    }
+    &__display {
+        width: 425px;
+        height: 351px;
+        &_margin {
+            margin-bottom: 16px;
+        }
+    }
+}

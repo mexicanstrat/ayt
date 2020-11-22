@@ -1,0 +1,93 @@
+.reviews-block {
+    max-width: 654px;
+    &_margin {
+        margin-bottom: 120px;
+    }
+}
+.review {
+    &__user {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &_margin {
+            margin-bottom: 40px;
+        }
+    }
+    &__user-photo {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    &__info-wrap {
+        display: flex;
+        flex-direction: column;
+        &_margin {
+            margin-left: 30px;
+        }
+    }
+    &__info {
+        display: flex;
+        &_margin {
+            margin-bottom: 7px;
+        }
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 140%;
+    }
+    &__city {
+        font-size: 26px;
+        line-height: 140%;
+        color: gray;
+        &_margin {
+            margin-left: 15px;
+        }
+    }
+    &__date {
+        font-size: 16px;
+        line-height: 140%;
+        color: $review-gray;
+    }
+    &__rating-wrap {
+        font-size: 16px;
+        line-height: 130%;
+        display: flex;
+        &_margin {
+            margin-bottom: 45px;
+        }
+    }
+    &__rating-category-wrap {
+        width: 250px;
+        &_long {
+            width: 330px;
+            margin-left: 70px;
+        }
+    }
+    &__rating-category {
+        display: flex;
+        justify-content: space-between;
+        &_margin {
+            margin-bottom: 19px;
+        }
+    }
+    &__comment-wrap {
+        font-size: 16px;
+        line-height: 130%;
+        &_margin {
+            margin-bottom: 50px;
+        }
+    }
+    &__all-reviews-button-wrap {
+        border-bottom: 1px solid rgba(32, 32, 32, 0.2);;
+        width: max-content;
+        cursor: pointer;
+    }
+    &__all-reviews-button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #202020;
+        opacity: 0.8;
+    }
+}

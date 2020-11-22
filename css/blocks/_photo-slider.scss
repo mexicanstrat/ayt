@@ -1,0 +1,33 @@
+.photo-slider {
+    &_margin {
+        margin-bottom: 109px;
+    }
+    &__display-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_margin {
+            margin-bottom: 14px;
+        }
+    }
+    &__display {
+        width: 683px;
+    }
+    &__images-wrap {
+        width: 683px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__image {
+        width: 39.58px;
+        height: 39.58px;
+        opacity: 0.6;
+        border-radius: 1px;
+        margin-right: 12.91px;
+        margin-bottom: 11.31px;
+        &_selected {
+            opacity: 1;
+        }
+    }
+}

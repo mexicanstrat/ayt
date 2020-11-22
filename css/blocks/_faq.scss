@@ -1,0 +1,66 @@
+.faq {
+    background: rgba(233, 233, 233, 0.3);
+    border-radius: 3px;
+    padding: 50px;
+    &_margin {
+        margin-bottom: 120px;
+    }
+    &__content-wrap {
+        max-width: 635px;
+    }
+    &__title {
+        font-family: $Poppins;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 120%;
+        color: $brand-pink;
+        &_margin {
+            margin-bottom: 50px;
+        }
+    }
+    &__list {
+        font-size: 18px;
+        line-height: 124%;
+    }
+    &__list-item {
+        &:before {
+            content: '';
+            border: 2px solid $brand-green;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-bottom: 2px;
+            display: inline-block;
+        }
+        &_active {
+            &:before {
+                content: '';
+                border: 1px solid white;
+                background: $brand-pink;
+                width: 6px;
+                height: 6px;
+                box-shadow: 0 0 0 2px $brand-pink, 
+
+            }
+        }
+        &_margin {
+            margin-bottom: 30px;
+        }
+    }
+    &__answer-wrap {
+        display: flex;
+        &_margin {
+            margin-bottom: 44px;
+        }
+    }
+    &__answer-line {
+        width: 1px;
+        height: inherit;
+        background: $brand-pink;
+        &_margin {
+            margin-left: 60px;
+            margin-right: 20px;
+        }
+    }
+}

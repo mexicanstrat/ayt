@@ -1,0 +1,77 @@
+.programm {
+    &_margin {
+        margin-bottom: 80px;
+    }
+}
+.days-slider {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 75.5px;
+    &_margin {
+        margin-bottom: 70px;
+    }
+}
+.left-button-slider {
+    transform: rotate(180deg);
+}
+.right-button-slider, .left-button-slider {
+    cursor: pointer;
+}
+.days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 45px;
+    margin-right: 53px;
+    &__item {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        position: relative;
+        background: $brand-gray;
+        &_active {
+            background-color: $brand-pink;
+        }
+    }
+    &__line {
+        height: 1px;
+        width: 15%;
+        background: $brand-gray;
+        &_active {
+            background: $brand-pink;
+        }
+    }
+    &__day-number {
+        position: absolute;
+        top: -37px;
+        left: 1px;
+        width: max-content;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #828282;
+        opacity: 0.7;
+        &_active {
+            top: -48px;
+            left: -1px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: $brand-pink;
+            opacity: 1;
+        }
+    }
+}
+.days-slider-block {
+    &__article {
+        margin-top: 4px;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+

@@ -1,0 +1,65 @@
+.icons-block {
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    flex-flow: wrap;
+    justify-content: space-between;
+    max-width: 810px;
+    @media (max-width: $tablet-width) {
+        max-width: 658px;
+    }
+    @media (max-width: $mobile-width) {
+        font-size: 12px;
+        line-height: 120%;
+    }
+    &_margin {
+        margin-bottom: 120px;
+    }
+    &__wrap {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 250px;
+        height: 100px;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: $tablet-width) {
+            width: 203px;
+            padding: 15px 20px;
+            height: 81px;
+        }
+        @media (max-width: $mobile-width) {
+            width: 145px;
+            padding: 10px;
+            height: 50px;
+            justify-content: flex-start;
+        }
+        &_margin {
+            margin-bottom: 30px;
+            @media (max-width: $tablet-width) {
+                margin-bottom: 25px;
+            }
+            @media (max-width: $mobile-width) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+    }
+    &__image {
+        padding-right: 25px;
+        @media (max-width: $tablet-width) {
+            height: 18.5px;
+            padding-right: 20px;
+        }
+        @media (max-width: $mobile-width) {
+            padding-right: 10px;
+        }
+    }
+}
+
